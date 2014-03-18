@@ -1,0 +1,276 @@
+/* This is the css file for my shopping list web app */
+/*--------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*--------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*--------------------------------------------------------------*/
+/* My css begins from here. */
+/*--------------------------------------------------------------*/
+html, body {
+			height:100%;
+			min-height:500px;
+}
+#container {
+			position:relative;
+			height:auto;
+			width:100%;
+			min-height:100%;
+			min-width:900px;
+}
+/*--------------------------------------------------------------*/
+#header {
+			height:35px;
+			width:100%;	
+			margin: 20px auto 0 auto;	
+}
+
+	#score-time{		
+			display:block;
+			height: 30px;
+			width: 700px;
+			margin: 0 auto; 
+	}
+	#score-time p{
+			display:inline-block;
+			width: 220px;
+			border: 1px solid #e8e8e8;
+			border-radius: 2px;	
+			padding: 3px;
+			font: 18px Lucida Grande, Verdana, sans serif;
+			text-align: left;
+			background: #f0f0f0;
+			color:#525252;	
+	}
+	#timer{
+			color: blue;
+	}
+	#questionsCorrect{
+			color: #2AB535;
+	}
+	#questionsWrong{
+			color: red;
+	}
+/*--------------------------------------------------------------*/
+#content {
+			clear:both;
+			width:700px;
+			height:100%;
+			
+			margin: 0 auto;			
+}
+/*--------------------------------------------------------------*/
+#message-div{
+			display:block;
+			width: 690px;
+			height:50px;
+			border: 3px solid #ddd;
+			border-radius: 5px;
+}
+	#message{
+			display:none;
+			margin: 15px 0;
+			font: 20px Arial, sans serif;
+			color:#ED1111;
+			text-align: center;	 
+	}
+/*--------------------------------------------------------------*/
+#start-div {
+			height: 500px;
+			width: 700px;
+	
+}
+	#start-div h1{
+			display:block;
+			height:48px;
+			width:700px;
+			margin: 40px auto 20px auto;
+			
+			font: 48px Georgia, serif;
+			letter-spacing:0px;
+			line-height:48px;
+			text-align:center;
+			color:#232323;
+	}
+	#start-div p{
+			display:block;
+			height:20px;
+			width:700px;
+			margin: 0px auto ;
+			
+			font: 18px Arial, sans serif;
+			letter-spacing:0px;
+			line-height:18px;
+			text-align:center;
+			color:#232323;
+	}
+	#start-quiz-button {
+			height: 60px;
+			width: 180px;
+			margin: 75px 0px 0px 250px;
+			color: white;
+			background: #424242;
+			font: 20px Verdana, sans serif;
+			border: 1px solid #6e6e6e;
+			border-radius: 3px;
+	}
+	#start-quiz-button:hover {
+			box-shadow: 5px 5px 5px   #C0C0C0;
+			border: 1px solid #C0C0C0;
+	}
+/*--------------------------------------------------------------*/
+#quiz-div{
+			height: 500px;
+			width: 700px;	
+			display: none;
+}
+	#question-wrapper {
+			height: 300px;
+			width: 700px;	
+			display: block;	
+			margin-top: 5px; 
+	}
+	#question-number {
+			width: 700px;
+			height: 30px;
+			font: 18px/30px Georgia, serif;
+			color: #000;
+	}
+	#question {
+			width: 700px;
+			height: 50px;
+			font: 24px/50px Verdana, serif;
+			color: #000;
+	}
+
+	label{
+			display:block;
+			width: 700px;
+			height: 35px;
+			margin: 5px 0px;
+			font: 18px Georgia, serif;
+			color: black;
+			background-color: #BAE5FF;
+			
+	}
+	label:hover {
+			box-shadow: 0px 1px 3px -1px #303030;
+			border: 1px solid #C0C0C0;
+			cursor: pointer;
+	}
+
+	#submit-button{
+			display:block;
+			width: 700px;
+			
+			margin: 15px 6px 0px 0;
+			padding:14px 16px 14px 16px;
+			border: 1px solid #D8D8D8;
+			border-radius:2px;
+			
+			font-family:Tahoma,sans serif;
+			
+			font-size: 18px;
+			letter-spacing: 1px;
+			
+			background-color:#008CFF;
+			color:#fff;
+	}
+	#submit-button:hover {
+			box-shadow: 5px 5px 5px   #C0C0C0;
+			border: 1px solid #C0C0C0;
+	}
+	#show-answer-button {
+			float:right;
+			display:inline-block;
+			
+			margin: 15px 6px 0px 0;
+			padding:7px 8px 7px 8px;
+			border: 1px solid #D8D8D8;
+			border-radius:2px;
+			
+			font-family:Arial;
+			font-weight:bold;
+			background-color:#997799;
+			color:#fff;
+	}
+	#show-answer-button:hover {
+			box-shadow: 0px 1px 1px -1px #303030;
+			border: 1px solid #C0C0C0;
+	}
+	#hint-button {
+			display:inline-block;
+			float:right;
+			margin: 15px 6px 0px 0px;
+			padding:7px 8px 7px 8px;
+			border: 1px solid #D8D8D8;
+			border-radius:2px;
+			
+			font-family:Arial;
+			font-weight:bold;
+			
+			background-color:#AB00AB;
+			color:#fff;
+	}
+	#hint-button:hover {
+			box-shadow: 0px 1px 1px -1px #303030;
+			border: 1px solid #C0C0C0;
+	}
+	#answer{
+			clear: both;
+			display: none;
+			height: 60px;
+			width: 700px;
+			
+			font: 14px Arial, sans serif;
+	}
+/*--------------------------------------------------------------*/
+#end-div {
+			height: 500px;
+			width: 700px;
+	
+}

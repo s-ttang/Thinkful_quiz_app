@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Math Quiz</title>
+		<link type="text/css" rel="stylesheet" href="quiz-app.css">
+	</head>
+	
+	<body>
+		<div id="container">
+			<div id="header">
+				<div id="score-time"> 
+					<p>Time remaining:  	<span id="timer"></span></p>
+					<p>Correct:  <span id="questionsCorrect"></span></p>
+					<p>Wrong:	<span id="questionsWrong"></span></p>
+				</div>
+			</div>
+		
+			<div id="content">
+			
+				<div id="message-div">
+					<p id="message">Is my guess correct or incorrect?</p>
+				</div>
+			
+				<div id="start-div">
+					<h1>Pop Quiz!</h1>
+					<p>"See if you can answer these math questions under the time limit!"</p>
+					<input type="button" name="start-quiz" value="Start Quiz!"  id="start-quiz-button">
+				</div>
+		
+				<div id="quiz-div">
+					<div id="question-wrapper">
+						<p id="question-number">Question Number goes here</p>
+						<p id="question">The Question goes here</p>
+						<div id="choices"></div>
+						<input type="submit" name="submit" value="Submit my answer!" id="submit-button">
+					</div>
+				
+					<div id="help-buttons-wrapper">
+						<input type="button" name="show-answer" value="Show Answer"  id="show-answer-button">
+						<input type="button" name="hint" value="Hint"  id="hint-button">
+					</div>
+				
+					<div id="answer">
+						<p>The answer is ____</p>
+					</div>
+				</div>
+				<div id="end-div">
+					<p id="end-score"></p>
+				</div>
+				
+			</div>
+		</div>  
+	</body>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="quiz-app.js" type"text/javascript"></script>
+</html>
